@@ -1,18 +1,22 @@
-package src;
-
-public class PalindromeCheckerApp
- {
-
+public class PalindromeCheckerAPP {
     public static void main(String[] args) {
 
-        // Display welcome message
-        System.out.println("Welcome to the Palindrome Checker Management System");
+        // Hardcoded input string
+        String input = "madam";
 
-        // Display application version
-        System.out.println("Version: 1.0");
+        // Variable to store reversed string
+        String reversed = "";
 
-        // System initialization message
-        System.out.println("System initialized successfully.");
+        // Iterate from last character to first
+        for (int i = input.length() - 1; i >= 0; i--) {
+            reversed = reversed + input.charAt(i);
+        }
 
+        // Compare original and reversed string
+        if (input.equals(reversed)) {
+            System.out.println(input + " is a Palindrome.");
+        } else {
+            System.out.println(input + " is NOT a Palindrome.");
+        }
     }
 }
