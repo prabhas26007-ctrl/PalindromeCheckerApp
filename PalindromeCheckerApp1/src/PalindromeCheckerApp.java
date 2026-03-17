@@ -1,5 +1,4 @@
 
-
 public class PalindromeCheckerApp {
     public static void main(String[] args) {
 
@@ -33,5 +32,3 @@ public class PalindromeCheckerApp {
         // Print output
         System.out.println("Input : " + input);
         System.out.println("Is Palindrome? : " + isPalindrome);
-    }
-}
